@@ -18,6 +18,15 @@ local Tree = Branches.new({
                     Children = {}
                 }
             }
+        },
+        {
+            Name = "Branch",
+            Children = {
+                {
+                    Name = "Leaf",
+                    Children = {}
+                }
+            }
         }
     }
 })
@@ -28,7 +37,9 @@ print(Tree)
 # Output
 ```
 ├── Root
+│    ├── Branch
+│    │    ├── Leaf
+│    │    └── Leaf
 │    └── Branch
-│         ├── Leaf
 │         └── Leaf
 ```
