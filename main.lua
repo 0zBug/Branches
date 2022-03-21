@@ -1,15 +1,15 @@
 
-local function ParseChild(tree, level, connector)
+local function ParseChild(Tree, Level, Connector)
     local str = "\n"
-    for i,v in next, tree do
+    for i,v in next, Tree do
         str = str .. "│    "
-        if connector then
-            str = str .. string.rep("     ", level - 1) .. "│    "
+        if Connector then
+            str = str .. string.rep("     ", Level - 1) .. "│    "
         else
-            str = str .. string.rep("     ", level)
+            str = str .. string.rep("     ", Level)
         end
 
-        if i == #tree then
+        if i == #Tree then
             str = str .. "└── "
         else
             str = str .. "├── "
@@ -17,7 +17,7 @@ local function ParseChild(tree, level, connector)
 
         str = str .. v.Name
         if v.Children then
-            str = str .. ParseChild(v.Children, level + 1, i ~= #tree)
+            str = str .. ParseChild(v.Children, Level + 1, i ~= #Tree)
         end
     end
     
