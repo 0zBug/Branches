@@ -26,7 +26,9 @@ print(Tree)
 ```
 
 # Output
+```
 ├── Root
 │    └── Branch
 │         ├── Leaf
 │         └── Leaf
+```
