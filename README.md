@@ -11,11 +11,11 @@ local Tree = Branches.new({
             Children = {
                 {
                     Name = "Leaf",
-                    Children = {},
+                    Children = {}
                 },
                 {
                     Name = "Leaf",
-                    Children = {},
+                    Children = {}
                 }
             }
         }
