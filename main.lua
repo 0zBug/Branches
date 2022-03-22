@@ -6,7 +6,6 @@ local function ParseChild(Tree, Level, Connector)
     Connector = Connector + 1
   
     for i,v in next, Tree do
-        print(Connector, v.Name)
         str = str .. "│    "
         str = str .. string.rep("     ", Level - Connector) .. string.rep("│    ", Connector)
 
