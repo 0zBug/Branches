@@ -2,7 +2,7 @@
 A simple lua module inspired by bash's tree command.
 
 # Example
-```
+```lua
 local Tree = Branches.new({
     Name = "Root",
     Children = {
